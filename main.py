@@ -65,6 +65,17 @@ def task_1_7():
 
 
 def task_1_8():
+    mystring = 'Максим'
+
+    my = mystring[:3]
+
+    print(my)
+
+
+def task_1_9():
+
+
+
 
 if __name__ == '__main__':
-    task_1_7()
+    task_1_8()
