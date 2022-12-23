@@ -59,12 +59,12 @@ def task_1_6():
 
 
 def task_1_7():
-    mystr = '12345'
-
-    mystr = mystr.
+    mystr = '12345'[::-1]
 
     print(mystr)
 
+
+def task_1_8():
 
 if __name__ == '__main__':
     task_1_7()
