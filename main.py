@@ -73,9 +73,19 @@ def task_1_8():
 
 
 def task_1_9():
+    mystring = 'Максим'
+
+    my = mystring[-3:]
+
+    print(my)
 
 
+def task_1_10():
+    mystring = 'пирожки>молоко>стряпня>яблочный пирог>мороженое'
 
+    my = mystring.split('>')
+
+    print(my)
 
 if __name__ == '__main__':
-    task_1_8()
+    task_1_10()
