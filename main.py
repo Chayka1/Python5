@@ -87,5 +87,34 @@ def task_1_10():
 
     print(my)
 
+
+def task_2_1():
+    name = input('Введите имя: ')
+    last_name = input('Введите фамилию: ')
+    patronymic = input('Введите отчество: ')
+
+    short_name = name[:1]
+    short_last_name = last_name[:1]
+    short_patronymic = patronymic[:1]
+
+    print(f'{short_name}.{short_last_name}.{short_patronymic}')
+
+
+def task_2_2():
+    numbers = input('Введите числа: ')
+
+    nums = list(numbers)
+
+    total = 0
+    for mynums in nums:
+        total += int(mynums)
+
+    print(total)
+
+
+def task_2_3():
+
+
+
 if __name__ == '__main__':
-    task_1_10()
+    task_2_2()
