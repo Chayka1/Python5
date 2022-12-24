@@ -113,8 +113,17 @@ def task_2_2():
 
 
 def task_2_3():
+    date = input('Введите дату (дд/мм/гггг): ')
 
+    altered_date = date.split('/')
 
+    months = ['января', 'февраля', 'марта', 'апреля', 'майя', 'июня',
+              'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+
+    i = int(altered_date[1])
+    month = months[i-1]
+
+    print(f'{altered_date[0]} {month} {altered_date[2]} г.')
 
 if __name__ == '__main__':
-    task_2_2()
+    task_2_3()
