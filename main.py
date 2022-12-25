@@ -129,69 +129,67 @@ def task_2_3():
 def task_2_4():
     number_of_phone = input('Введите номер телефона: ')
 
-    a = []
-    b = []
+    first = []
+    second = []
 
     numbers = number_of_phone.split('-')
 
-    i = list(numbers[1])
-    j = list(numbers[2])
-
-    for nums in i:
+    for nums in list(numbers[1]):
         if nums == 'A' or nums == 'B' or nums == 'C':
             num = 2
-            a.append(num)
+            first.append(num)
         elif nums == 'D' or nums == 'E' or nums == 'F':
             num = 3
-            a.append(num)
+            first.append(num)
         elif nums == 'G' or nums == 'H' or nums == 'I':
             num = 4
-            a.append(num)
+            first.append(num)
         elif nums == 'J' or nums == 'K' or nums == 'L':
             num = 5
-            a.append(num)
+            first.append(num)
         elif nums == 'M' or nums == 'N' or nums == 'O':
             num = 6
-            a.append(num)
+            first.append(num)
         elif nums == 'P' or nums == 'Q' or nums == 'R' or nums == 'S':
             num = 7
-            a.append(num)
+            first.append(num)
         elif nums == 'T' or nums == 'U' or nums == 'W':
             num = 8
-            a.append(num)
+            first.append(num)
         elif nums == 'W' or nums == 'X' or nums == 'Y' or nums == 'Z':
             num = 9
-            a.append(num)
+            first.append(num)
 
-    for nums in j:
+    for nums in list(numbers[2]):
         if nums == 'A' or nums == 'B' or nums == 'C':
             num = 2
-            b.append(num)
+            second.append(num)
         elif nums == 'D' or nums == 'E' or nums == 'F':
             num = 3
-            b.append(num)
+            second.append(num)
         elif nums == 'G' or nums == 'H' or nums == 'I':
             num = 4
-            b.append(num)
+            second.append(num)
         elif nums == 'J' or nums == 'K' or nums == 'L':
             num = 5
-            b.append(num)
+            second.append(num)
         elif nums == 'M' or nums == 'N' or nums == 'O':
             num = 6
-            b.append(num)
+            second.append(num)
         elif nums == 'P' or nums == 'Q' or nums == 'R' or nums == 'S':
             num = 7
-            b.append(num)
+            second.append(num)
         elif nums == 'T' or nums == 'U' or nums == 'W':
             num = 8
-            b.append(num)
+            second.append(num)
         elif nums == 'W' or nums == 'X' or nums == 'Y' or nums == 'Z':
             num = 9
-            b.append(num)
+            second.append(num)
 
+    first_transl = "".join(map(str, first))
+    second_transl = "".join(map(str, second))
 
-
-
+    print(f'{numbers[0]}-{first_transl}-{second_transl}')
 
 
 if __name__ == '__main__':
