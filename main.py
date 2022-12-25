@@ -125,5 +125,74 @@ def task_2_3():
 
     print(f'{altered_date[0]} {month} {altered_date[2]} г.')
 
+
+def task_2_4():
+    number_of_phone = input('Введите номер телефона: ')
+
+    a = []
+    b = []
+
+    numbers = number_of_phone.split('-')
+
+    i = list(numbers[1])
+    j = list(numbers[2])
+
+    for nums in i:
+        if nums == 'A' or nums == 'B' or nums == 'C':
+            num = 2
+            a.append(num)
+        elif nums == 'D' or nums == 'E' or nums == 'F':
+            num = 3
+            a.append(num)
+        elif nums == 'G' or nums == 'H' or nums == 'I':
+            num = 4
+            a.append(num)
+        elif nums == 'J' or nums == 'K' or nums == 'L':
+            num = 5
+            a.append(num)
+        elif nums == 'M' or nums == 'N' or nums == 'O':
+            num = 6
+            a.append(num)
+        elif nums == 'P' or nums == 'Q' or nums == 'R' or nums == 'S':
+            num = 7
+            a.append(num)
+        elif nums == 'T' or nums == 'U' or nums == 'W':
+            num = 8
+            a.append(num)
+        elif nums == 'W' or nums == 'X' or nums == 'Y' or nums == 'Z':
+            num = 9
+            a.append(num)
+
+    for nums in j:
+        if nums == 'A' or nums == 'B' or nums == 'C':
+            num = 2
+            b.append(num)
+        elif nums == 'D' or nums == 'E' or nums == 'F':
+            num = 3
+            b.append(num)
+        elif nums == 'G' or nums == 'H' or nums == 'I':
+            num = 4
+            b.append(num)
+        elif nums == 'J' or nums == 'K' or nums == 'L':
+            num = 5
+            b.append(num)
+        elif nums == 'M' or nums == 'N' or nums == 'O':
+            num = 6
+            b.append(num)
+        elif nums == 'P' or nums == 'Q' or nums == 'R' or nums == 'S':
+            num = 7
+            b.append(num)
+        elif nums == 'T' or nums == 'U' or nums == 'W':
+            num = 8
+            b.append(num)
+        elif nums == 'W' or nums == 'X' or nums == 'Y' or nums == 'Z':
+            num = 9
+            b.append(num)
+
+
+
+
+
+
 if __name__ == '__main__':
-    task_2_3()
+    task_2_4()
