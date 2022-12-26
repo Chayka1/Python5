@@ -208,5 +208,24 @@ def task_2_8():
     print(finish_phrase)
 
 
+def task_2_9():
+    my_string = input('Введите фразу: ')
+    my_str = my_string.split()
+    my_str = ''.join(my_str)
+
+    vowels = 0
+    consonants = 0
+
+    for i in my_str:
+        if i.lower() == 'а' or i.lower() == 'е' or i.lower() == 'є' or i.lower() == 'и' or i.lower() == 'і' or i.lower() == 'ї' or i.lower() == 'о' or i.lower() == 'у':
+            vowels += 1
+        else:
+            consonants += 1
+
+    print(f'Гласные: {vowels}\n'
+          f'Согласные: {consonants}')
+
+
+
 if __name__ == '__main__':
-    task_2_8()
+    task_2_9()
