@@ -121,12 +121,12 @@ def task_2_3():
               'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
 
     i = int(altered_date[1])
-    month = months[i-1]
+    month = months[i - 1]
 
     print(f'{altered_date[0]} {month} {altered_date[2]} г.')
 
 
-def task_2_4():
+def task_2_5():
     number_of_phone = input('Введите номер телефона: ')
 
     first = []
@@ -192,5 +192,21 @@ def task_2_4():
     print(f'{numbers[0]}-{first_transl}-{second_transl}')
 
 
+def task_2_8():
+    my_string = input('Введите фразу: ')
+
+    st = my_string.split()
+
+    finish = []
+
+    for num in range(0, len(st)):
+        i = st[num].title()
+        finish.append(i)
+
+    finish_phrase = ' '.join(finish)
+
+    print(finish_phrase)
+
+
 if __name__ == '__main__':
-    task_2_4()
+    task_2_8()
