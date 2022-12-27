@@ -1,3 +1,6 @@
+import re
+
+
 def task_1_1():
     choise = 'д'
 
@@ -226,6 +229,22 @@ def task_2_9():
           f'Согласные: {consonants}')
 
 
+def task_2_11():
+    my_str = input('Введите фразу: ')
+
+    my_str = my_str.split()
+
+    finish = []
+
+    for i in range(len(my_str)):
+        char = my_str[i][0]
+        mystr = my_str[i][1:]
+        mystr = mystr + char + 'ки'
+        finish.append(mystr)
+
+    finish_phrase = ' '.join(finish)
+    print(finish_phrase)
+
 
 if __name__ == '__main__':
-    task_2_9()
+    task_2_11()
